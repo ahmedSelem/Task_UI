@@ -1,0 +1,138 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+:root {
+  --mainFont: Roboto;
+  --mainColor: #8e44ad;
+  --font-size: 16px;
+}
+
+* {
+  font-family: var(--mainFont);
+}
+
+.setting-font {
+  position: fixed;
+  right: -200px;
+  top: 10%;
+  transition: all 0.5s ease;
+}
+.setting-font a {
+  display: block;
+  background: var(--mainColor);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px 0px 0px 10px;
+  position: absolute;
+  left: -40px;
+}
+.setting-font .setting-body {
+  width: 200px;
+  background-color: #e1d7e5;
+  border-radius: 0 5px 5px 5px;
+}
+.setting-font .setting-body ul li {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.setting-font .setting-body ul li.active {
+  background-color: rgba(142, 68, 173, 0.5803921569) !important;
+  color: #fff;
+}
+
+.sign-up-component .title-component h4 {
+  font-size: calc(var(--font-size) + 10px);
+}
+.sign-up-component .title-component p {
+  font-size: 14px;
+}
+.sign-up-component .form-component label {
+  font-size: var(--font-size);
+}
+.sign-up-component .form-component input::placeholder {
+  font-size: 12px;
+}
+.sign-up-component .form-component .form-control {
+  background-color: rgba(204, 204, 204, 0.2392156863);
+  border: 1px solid rgba(204, 204, 204, 0.2392156863);
+}
+.sign-up-component .form-component .error-message {
+  font-size: 14px;
+}
+.sign-up-component .form-component .form-check-box {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.sign-up-component .form-component .form-check-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.sign-up-component .form-component .checkmark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  background-color: #eee;
+}
+.sign-up-component .form-component .form-check-box:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.sign-up-component .form-component .form-check-box input:checked ~ .checkmark {
+  background-color: var(--mainColor);
+}
+.sign-up-component .form-component .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.sign-up-component .form-component .form-check-box input:checked ~ .checkmark:after {
+  display: block;
+}
+.sign-up-component .form-component .form-check-box .checkmark:after {
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.sign-up-component .form-component .terms-privacy {
+  font-size: 14px;
+}
+.sign-up-component .form-component .terms-privacy p {
+  font-size: calc(var(--font-size) - 4px);
+}
+.sign-up-component .form-component .btns-box .btn {
+  font-size: var(--font-size);
+}
+.sign-up-component .form-component .btns-box .btn:first-of-type {
+  background-color: #f5554a;
+}
+.sign-up-component .form-component .btns-box .btn:last-of-type {
+  background-color: #1db27b;
+}
+
+/*# sourceMappingURL=style.css.map */
